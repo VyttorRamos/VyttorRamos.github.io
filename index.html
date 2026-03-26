@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vyttor Camillo | Portfólio</title>
+</head>
+
+<body>
+
+    <header class="fade-in">
+        <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
+            <i class="fa-solid fa-sun"></i> Modo Claro
+        </button>
+
+        <h1>Vyttor Camillo</h1>
+        <p><i class="fa-solid fa-headset"></i> Suporte Técnico N2 | <i class="fa-solid fa-laptop-code"></i> Estudante de
+            ADS | <i class="fa-solid fa-shield-halved"></i> Cybersegurança</p>
+
+        <div class="header-actions">
+            <a href="CV/Vyttor Ramos Curriculo.pdf" download class="btn btn-primary">
+                <i class="fa-solid fa-file-pdf"></i> Baixar Currículo
+            </a>
+        </div>
+    </header>
+
+    <section class="fade-in" style="animation-delay: 0.2s;">
+        <h2><i class="fa-solid fa-user-tie"></i> Sobre Mim</h2>
+        <p class="about-text">
+            Estudante de Análise e Desenvolvimento de Sistemas e profissional atuando como
+            Suporte N2 com foco em banco de dados e ERP. Possuo conhecimentos em Python,
+            C++, SQL e fundamentos de Segurança da Informação.
+        </p>
+
+        <h3 class="skills-title">Principais Habilidades</h3>
+        <div class="skills-container">
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+            <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> InfoSec</span>
+        </div>
+    </section>
+
+    <section class="fade-in" style="animation-delay: 0.4s;">
+        <h2><i class="fa-solid fa-folder-open"></i> Projetos em Destaque</h2>
+
+        <div class="projects-grid">
+            <div class="card">
+                <h3><i class="fa-solid fa-ship"></i> Batalha Naval</h3>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Estruturas de Dados</span>
+                </div>
+                <p>Desenvolvimento de um jogo de batalha naval utilizando apenas C++ com foco detalhado em estruturas de
+                    dados.</p>
+                <a href="https://github.com/VyttorRamos/Batalha-Naval-Estruturas-de-dados" target="_blank" class="btn">
+                    <i class="fa-brands fa-github"></i> Ver Código
+                </a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-book-bookmark"></i> Book Finder</h3>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                </div>
+                <p>Sistema para gerenciamento de uma biblioteca com motor de recomendação inteligente, focado no
+                    BackEnd.</p>
+                <a href="https://github.com/VyttorRamos/BookFinder" target="_blank" class="btn">
+                    <i class="fa-brands fa-github"></i> Ver Código
+                </a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-car-side"></i> SmartDrive</h3>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">C</span>
+                    <span class="tag">IoT</span>
+                </div>
+                <p>Sistema de monitoramento de velocidade para estacionamentos reais integrando hardware (IoT) e
+                    frontend.</p>
+                <a href="https://github.com/VyttorRamos/SmartDrive" target="_blank" class="btn">
+                    <i class="fa-brands fa-github"></i> Ver Código
+                </a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-floppy-disk"></i> SaveMemories</h3>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML | CSS</span>
+                    <span class="tag">MySQL</span>
+                </div>
+                <p>Desenvolvimento de um sistema para armazenar e gerenciar suas memórias com fotos, descrições e cores personalizadas.</p>
+                <a href="https://github.com/VyttorRamos/SaveMemories" target="_blank" class="btn">
+                    <i class="fa-brands fa-github"></i> Ver Código
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in" style="animation-delay: 0.6s;">
+        <h2><i class="fa-solid fa-address-card"></i> Contato</h2>
+        <div class="contact-links">
+            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a
+                    href="mailto:vyttorcamillo7@gmail.com">vyttorcamillo7@gmail.com</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong> <a
+                    href="https://linkedin.com/in/vyttor-camillo" target="_blank">linkedin.com/in/vyttor-camillo</a></p>
+            <p><i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/VyttorRamos"
+                    target="_blank">github.com/VyttorRamos</a></p>
+        </div>
+    </section>
+
+    <footer class="fade-in" style="animation-delay: 0.8s;">
+        <p>© 2026 Vyttor Camillo - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        //tema salvo
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'light') {
+            body.classList.add('light-theme');
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i> Modo Escuro';
+        }
+
+        //altera o tema no clique
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+
+            if (body.classList.contains('light-theme')) {
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i> Modo Escuro';
+            } else {
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Modo Claro';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
