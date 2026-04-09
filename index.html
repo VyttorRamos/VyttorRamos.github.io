@@ -110,6 +110,19 @@
                     <i class="fa-brands fa-github"></i> <span data-i18n="btnCode">Ver Código</span>
                 </a>
             </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-floppy-disk"></i> TMAnalyzer</h3>
+                <div class="project-tags">
+                    <span class="tag">JavaScript (Chart.js)</span>
+                    <span class="tag">HTML | CSS (TwTailwind)</span>
+                </div>
+                <p data-i18n="projectMemoriesDesc">Desenvolvimento de um sistema painel gerencial interativo e de alto
+                    nível para análise de Tempo Médio de Atendimento (TMA)</p>
+                <a href="https://github.com/VyttorRamos/TMAnalyzer" target="_blank" class="btn">
+                    <i class="fa-brands fa-github"></i> <span data-i18n="btnCode">Ver Código</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -192,7 +205,7 @@
                     el.innerHTML = translations[lang][key];
                 }
             });
-            
+
             document.getElementById('hero-subtitle').innerHTML = translations[lang].subtitle;
             langToggleBtn.innerHTML = lang === 'pt' ? '<i class="fa-solid fa-language"></i> EN' : '<i class="fa-solid fa-language"></i> PT';
         }
